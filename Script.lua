@@ -33,7 +33,7 @@ end)
 
 -- 3. Janela Principal
 local Window = WindUI:CreateWindow({
-    Title = "KazeDev",
+    Title = "KazeHub 👾",
     Author = "by Kaze",
     Icon = hubIcon,
     Theme = "Dark",
@@ -49,7 +49,7 @@ local Window = WindUI:CreateWindow({
 })
 
 WindUI:Notify({
-    Title = "Bem-vindo ao KazeDev!",
+    Title = "Bem-vindo ao KazeHub!",
     Content = "Olá, " .. LocalPlayer.DisplayName .. "! Script carregado com sucesso.",
     Duration = 4,
     Icon = gameIconUrl
@@ -139,7 +139,7 @@ end
 -- =======================================================
 -- ABA 1: HOME
 -- =======================================================
-local HomeTab = Window:Tab({ Title = "Home", Icon = "home" })
+local HomeTab = Window:Tab({ Title = "Home", Icon = "house" })
 
 HomeTab:Section({ Title = "Comunidade & Informações" })
 
@@ -162,7 +162,7 @@ HomeTab:Button({
     Callback = function()
         if setclipboard then
             setclipboard("https://discord.gg/kazedev")
-            WindUI:Notify({ Title = "KazeDev", Content = "Link do Discord copiado!", Duration = 2 })
+            WindUI:Notify({ Title = "KazeHub", Content = "Link do Discord copiado!", Duration = 2 })
         end
     end,
 })
